@@ -18,46 +18,6 @@ Icons: Font Awesome or inline SVGs
 Deployment: Vercel (recommended for Next.js)
 
 
-🚀 Installation & Setup
-
-Follow these steps to set up and run the project locally:
-
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/quiz-form-nextjs.git
-Navigate to the project directory:
-
-bash
-Copy
-Edit
-cd quiz-form-nextjs
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-# or
-yarn install
-Start the development server:
-
-bash
-Copy
-Edit
-npm run dev
-# or
-yarn dev
-Open your browser and navigate to:
-
-arduino
-Copy
-Edit
-http://localhost:3000
-
-
 ✨ Deployment
 
 This project is built with Next.js and can be deployed easily on platforms like Vercel.
