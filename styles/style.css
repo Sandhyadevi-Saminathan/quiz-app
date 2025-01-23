@@ -71,7 +71,7 @@
     font-size: 1rem;
     font-weight: 800;
     margin-bottom: 8px;  /* Increased space between label and input */
-    color: darksalmon;
+    color:black;
     font-family: cursive;
 }
 
@@ -177,7 +177,7 @@ select.form-input.dropdown {
 .quiz-question {
     font-size:large;
     font-weight: 700;
-    color: coral;
+    color:darkorange;
     font-family: 'Dancing Script', cursive; /* Cursive font for the question */
     margin-bottom: 20px;
     line-height: 1.4;
