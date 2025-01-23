@@ -1,0 +1,342 @@
+/* General styles for the landing page */
+.gif-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 30%; /* Position it to the right of the form */
+    width: 70%; /* Adjust width to fill the remaining space */
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; /* Reduce opacity slightly */
+    z-index: -1; /* Ensure GIF is behind the form */
+}
+
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFDAB9;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-content {
+    padding: 30px;  /* Increased padding for spacing */
+    max-width: 700px;  /* Increased max-width */
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Enhanced shadow */
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 30px;
+}
+
+.landing-title {
+    font-size: 3.5rem;  /* Increased size for more impact */
+    font-weight: 700;
+    color: coral;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.landing-description {
+    font-size: 1.25rem;
+    color: black;
+    font-family: 'Lora', serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Form Section */
+.form-container {
+    background-color: #fff;
+    padding: 30px;  /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-top: 20px;  /* Spacing from title */
+}
+
+/* Form Label */
+.form-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 8px;  /* Increased space between label and input */
+    color: darksalmon;
+    font-family: cursive;
+}
+
+/* Form Inputs */
+.form-input {
+    width: 100%;
+    padding: 14px;  /* Increased padding */
+    margin-bottom: 25px;  /* Increased margin */
+    font-size: 1.125rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;  /* Rounded edges */
+    outline: none;
+    font-family: cursive;
+    transition: border-color 0.3s ease;  /* Smooth transition on focus */
+}
+
+.form-input:focus {
+    border-color: #ff7e5f;
+}
+
+/* Submit Button */
+.form-submit {
+    width: 100%;
+    padding: 16px;  /* Larger padding */
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #feb47b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);  /* Hover effect for button */
+}
+
+/* Dropdown (select) styling */
+select.form-input.dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 14px;
+    font-size: 1.125rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" height="16" viewBox="0 0 16 16" width="16"%3E%3Cpath d="M8 11.586l4-4H4l4 4z" fill="%23A9A9A9"%3E%3C/path%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+select.form-input.dropdown:focus {
+    border-color: #ff7e5f; /* Change border color on focus */
+}
+
+/* Scrollable dropdown list */
+select.form-input.dropdown {
+    max-height: 100px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+}
+
+/* Ensuring the dropdown doesn't overflow outside the form */
+.form-container {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+/* Question and Answer Section */
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+  
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left; /* Align text to the left for readability */
+    width: auto; /* Let it take the full width of the screen */
+    max-width: none; /* Disable max-width */
+}
+
+.correct-answer {
+    color: green;
+  }
+  
+  .incorrect-answer {
+    color: red;
+  }
+  
+
+/* Question Styling */
+.quiz-question {
+    font-size:large;
+    font-weight: 700;
+    color: coral;
+    font-family: 'Dancing Script', cursive; /* Cursive font for the question */
+    margin-bottom: 20px;
+    line-height: 1.4;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;  /* Adds a line under the question */
+}
+
+/* Answer Options - Displayed Vertically */
+
+    .answer-options {
+        background-color: #f4f4f4;
+        padding: 15px;
+        margin: 10px 0; /* Spacing between options */
+        border-radius: 8px;
+        border: 2px solid #ddd;
+        cursor: pointer;
+        font-size: 1.125rem;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-align: left;
+        display: block;  /* Ensure it's a block-level element */
+        width: 100%;     /* Ensure it takes full width */
+    }
+
+
+/* Hover effect for Answer Options */
+.answer-option:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);  /* Slightly enlarge the option */
+    border-color: #ff7e5f;
+    color: white;
+}
+
+/* Selected Answer */
+.answer-option.selected {
+    background-color: #ff7e5f;
+    color: white;
+    border-color: #ff7e5f;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #feb47b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);  /* Hover effect for submit button */
+}
+
+/* Active/Inactive Question Styling */
+.inactive-question {
+    color: #aaa;
+    font-weight: 500;
+    text-decoration: line-through; /* Indicates an inactive question */
+}
+
+/* Answer Icon Styling (for additional indicators like check or cross) */
+.answer-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ff7e5f;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.answer-icon.correct {
+    background-color: #4CAF50;  /* Green for correct answers */
+}
+
+.answer-icon.incorrect {
+    background-color: #F44336;  /* Red for incorrect answers */
+}
+
+/* Question Navigation (Next/Previous buttons) */
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.quiz-answer-label {
+    display: block;  /* This will make each answer appear on a new line */
+    margin-bottom: 10px;  /* Space between answers */
+    font-size: 1.1rem;  /* Optional: Increase font size */
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background-color: #feb47b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+.nav-btn:hover {
+    background-color: #ff7e5f;
+}
+
+.nav-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Responsive Design for Question Section */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .quiz-question {
+        font-size: 1.25rem;
+    }
+
+    .answer-option {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.125rem;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .landing-description {
+        font-size: 1rem;
+    }
+
+    .form-input {
+        font-size: 1rem;
+    }
+
+    .form-submit {
+        font-size: 1.125rem;
+    }
+
+    .landing-content {
+        padding: 15px;  /* Decreased padding for smaller screens */
+    }
+}
