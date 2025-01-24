@@ -223,7 +223,7 @@ const QuizForm = () => {
               style={{
                 height: quizData.length === 0 ? '300px' : '500px',
                 overflowY: 'auto',
-                width: '700px',
+                width: quizData.length === 0 ? '500px' : '',
               }}
             >
               <form>
@@ -283,7 +283,7 @@ const QuizForm = () => {
                   className="button-container"
                   style={{
                     marginTop: quizData.length === 0 ? '150px' : '20px',
-                    marginLeft: quizData.length === 0 ? '265px' : '',
+                    marginLeft: quizData.length === 0 ? '150px' : '',
                   }}
                 >
                   {quizData.length !== 0 && score === null && (
